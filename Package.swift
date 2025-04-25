@@ -8,8 +8,8 @@ let package = Package(
         .macOS(.v11), .macCatalyst(.v14)
     ],
     products: [
-        .library(name: "GLTFKit2",          targets: ["GLTFKit2"]),
-        .library(name: "GLTFKit2SceneKit",  targets: ["GLTFKit2SceneKit"])
+        .library(name: "GLTFKit2",         targets: ["GLTFKit2"]),
+        .library(name: "GLTFKit2SceneKit", targets: ["GLTFKit2SceneKit"]),
     ],
     targets: [
         .target(
@@ -20,6 +20,6 @@ let package = Package(
             name: "GLTFKit2SceneKit",
             dependencies: ["GLTFKit2"],
             path: "Sources/GLTFKit2SceneKit"
-        ),
+        )
     ]
 )
